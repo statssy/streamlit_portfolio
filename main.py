@@ -137,8 +137,8 @@ def create_pipeline_diagram():
             x=x_positions[i+1], y=y_positions[i+1],
             ax=x_positions[i], ay=y_positions[i],
             xref="x", yref="y", axref="x", ayref="y",
-            arrowhead=3, arrowsize=2, arrowwidth=3,
-            arrowcolor="#333333"
+            arrowhead=3, arrowsize=2, arrowwidth=2,
+            arrowcolor="#cccccc"
         )
     
     fig.update_layout(
@@ -638,18 +638,18 @@ def main():
     # 사이드바에 프로젝트 정보
     st.sidebar.markdown("---")
     st.sidebar.subheader("📋 프로젝트 정보")
-    st.sidebar.info(
+    st.sidebar.markdown(
         """
         **데이터 엔지니어링 파이프라인 시각화**
         
         이 애플리케이션은 다음 기능을 제공합니다:
         
-        🔹 샘플 고객 데이터 생성
-        🔹 SQL 쿼리를 통한 데이터 전처리
-        🔹 특성 엔지니어링 및 파생 변수 생성
-        🔹 머신러닝 모델 학습 (회귀/분류)
-        🔹 실시간 예측 및 배치 예측
-        🔹 파이프라인 시각화
+        - 🔹 샘플 고객 데이터 생성
+        - 🔹 SQL 쿼리를 통한 데이터 전처리
+        - 🔹 특성 엔지니어링 및 파생 변수 생성
+        - 🔹 머신러닝 모델 학습 (회귀/분류)
+        - 🔹 실시간 예측 및 배치 예측
+        - 🔹 파이프라인 시각화
         """
     )
     
